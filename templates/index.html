@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <form action='/predict' method="POST">
+        Sepal Length: <input type="text" name='SepalLengthCm'><br>
+        Sepal Width: <input type="text" name='SepalWidthCm'><br>
+        Petal Length: <input type="text" name='PetalLengthCm'><br>
+        Petal Width: <input type="text" name='PetalWidthCm'><br>
+        Class: {{ result }} <br> <!-- Display predicted class here -->
+        <input type="submit" value="predict">
+    </form>
+</body>
+</html>
